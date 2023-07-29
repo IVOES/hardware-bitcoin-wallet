@@ -1,0 +1,923 @@
+aes.c:171:26: style: The scope of the variable 'otemp' can be reduced. [variableScope]
+ uint8_t o1, o2, o3, o4, otemp;
+                         ^
+aes.c:207:26: style: The scope of the variable 'otemp' can be reduced. [variableScope]
+ uint8_t o1, o2, o3, o4, otemp;
+                         ^
+aes.c:271:10: style: The scope of the variable 'tmp0' can be reduced. [variableScope]
+ uint8_t tmp0, tmp1, tmp2, tmp3, tmp4;
+         ^
+aes.c:271:16: style: The scope of the variable 'tmp1' can be reduced. [variableScope]
+ uint8_t tmp0, tmp1, tmp2, tmp3, tmp4;
+               ^
+aes.c:271:22: style: The scope of the variable 'tmp2' can be reduced. [variableScope]
+ uint8_t tmp0, tmp1, tmp2, tmp3, tmp4;
+                     ^
+aes.c:271:28: style: The scope of the variable 'tmp3' can be reduced. [variableScope]
+ uint8_t tmp0, tmp1, tmp2, tmp3, tmp4;
+                           ^
+aes.c:427:4: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+   fscanf(test_vector_file, "%02x", &value);
+   ^
+aes.c:447:6: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+     fscanf(test_vector_file, "%02x", &value);
+     ^
+aes.c:461:6: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+     fscanf(test_vector_file, "%02x", &value);
+     ^
+aes.c:369:7: style: The scope of the variable 'seen_count' can be reduced. [variableScope]
+ bool seen_count;
+      ^
+aes.c:370:7: style: The scope of the variable 'test_failed' can be reduced. [variableScope]
+ bool test_failed;
+      ^
+avr/adc.c:87:11: style: The scope of the variable 'sample' can be reduced. [variableScope]
+ uint16_t sample;
+          ^
+avr/eeprom.c:30:45: warning: Function 'nonVolatileWrite' argument order different: declaration 'data, partition, address' definition 'data, address, length' [funcArgOrderDifferent]
+NonVolatileReturn nonVolatileWrite(uint8_t *data, uint32_t address, uint32_t length)
+                                            ^
+hwinterface.h:247:52: note: Function 'nonVolatileWrite' argument order different: declaration 'data, partition, address' definition 'data, address, length'
+extern NonVolatileReturn nonVolatileWrite(uint8_t *data, NVPartitions partition, uint32_t address, uint32_t length);
+                                                   ^
+avr/eeprom.c:30:45: note: Function 'nonVolatileWrite' argument order different: declaration 'data, partition, address' definition 'data, address, length'
+NonVolatileReturn nonVolatileWrite(uint8_t *data, uint32_t address, uint32_t length)
+                                            ^
+avr/eeprom.c:52:44: warning: Function 'nonVolatileRead' argument order different: declaration 'data, partition, address' definition 'data, address, length' [funcArgOrderDifferent]
+NonVolatileReturn nonVolatileRead(uint8_t *data, uint32_t address, uint32_t length)
+                                           ^
+hwinterface.h:256:51: note: Function 'nonVolatileRead' argument order different: declaration 'data, partition, address' definition 'data, address, length'
+extern NonVolatileReturn nonVolatileRead(uint8_t *data, NVPartitions partition, uint32_t address, uint32_t length);
+                                                  ^
+avr/eeprom.c:52:44: note: Function 'nonVolatileRead' argument order different: declaration 'data, partition, address' definition 'data, address, length'
+NonVolatileReturn nonVolatileRead(uint8_t *data, uint32_t address, uint32_t length)
+                                           ^
+avr/lcd_and_input.c:746:10: style: The scope of the variable 'one_byte' can be reduced. [variableScope]
+ uint8_t one_byte; // current byte of seed
+         ^
+avr/tester/hwb_tester.c:106:2: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ printf("Payload length: %d\n", length);
+ ^
+avr/tester/hwb_tester.c:181:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("Got absurdly large packet length of %d\n", length);
+  ^
+avr/tester/hwb_tester.c:151:10: style: The scope of the variable 'ack_buffer' can be reduced. [variableScope]
+ uint8_t ack_buffer[5];
+         ^
+avr/tester/hwb_tester.c:197:10: style: The scope of the variable 'ack_buffer' can be reduced. [variableScope]
+ uint8_t ack_buffer[5];
+         ^
+avr/tester/hwb_tester.c:219:8: style: The scope of the variable 'newline' can be reduced. [variableScope]
+ char *newline;
+       ^
+avr/usart.c:112:8: style: Variable 'temp' is assigned a value that is never used. [unreadVariable]
+  temp = UDR0;
+       ^
+baseconv.c:72:10: style: The scope of the variable 'one_bit' can be reduced. [variableScope]
+ uint8_t one_bit;
+         ^
+bignum256.c:73:10: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+ uint8_t cmp;
+         ^
+bignum256.c:167:10: style: The scope of the variable 'temp' can be reduced. [variableScope]
+ uint8_t temp;
+         ^
+bignum256.c:203:11: style: The scope of the variable 'partial' can be reduced. [variableScope]
+ uint16_t partial;
+          ^
+bignum256.c:228:11: style: The scope of the variable 'partial' can be reduced. [variableScope]
+ uint16_t partial;
+          ^
+bignum256.c:337:10: style: The scope of the variable 'carry' can be reduced. [variableScope]
+ uint8_t carry;
+         ^
+bignum256.c:467:10: style: The scope of the variable 'byte_of_n_minus_2' can be reduced. [variableScope]
+ uint8_t byte_of_n_minus_2;
+         ^
+bignum256.c:226:89: style:inconclusive: Function 'bigSubtractVariableSizeNoModulo' argument 4 names different: declaration 'size' definition 'op_size'. [funcArgNamesDifferent]
+uint8_t bigSubtractVariableSizeNoModulo(uint8_t *r, uint8_t *op1, uint8_t *op2, uint8_t op_size)
+                                                                                        ^
+bignum256.h:54:96: note: Function 'bigSubtractVariableSizeNoModulo' argument 4 names different: declaration 'size' definition 'op_size'.
+extern uint8_t bigSubtractVariableSizeNoModulo(uint8_t *r, uint8_t *op1, uint8_t *op2, uint8_t size);
+                                                                                               ^
+bignum256.c:226:89: note: Function 'bigSubtractVariableSizeNoModulo' argument 4 names different: declaration 'size' definition 'op_size'.
+uint8_t bigSubtractVariableSizeNoModulo(uint8_t *r, uint8_t *op1, uint8_t *op2, uint8_t op_size)
+                                                                                        ^
+bignum256.c:266:10: style: Local variable 'zero' shadows outer variable [shadowVariable]
+ uint8_t zero[32];
+         ^
+bignum256.c:520:16: note: Shadowed declaration
+static uint8_t zero[32] = {
+               ^
+bignum256.c:266:10: note: Shadow variable
+ uint8_t zero[32];
+         ^
+bignum256.c:289:10: style: Local variable 'zero' shadows outer variable [shadowVariable]
+ uint8_t zero[32];
+         ^
+bignum256.c:520:16: note: Shadowed declaration
+static uint8_t zero[32] = {
+               ^
+bignum256.c:289:10: note: Shadow variable
+ uint8_t zero[32];
+         ^
+bignum256.c:317:10: style: Local variable 'zero' shadows outer variable [shadowVariable]
+ uint8_t zero[32];
+         ^
+bignum256.c:520:16: note: Shadowed declaration
+static uint8_t zero[32] = {
+               ^
+bignum256.c:317:10: note: Shadow variable
+ uint8_t zero[32];
+         ^
+bip32.c:327:15: style: The scope of the variable 'digit' can be reduced. [variableScope]
+ unsigned int digit;
+              ^
+bip32.c:328:15: style: The scope of the variable 'carry' can be reduced. [variableScope]
+ unsigned int carry;
+              ^
+ecdsa.c:304:10: style: The scope of the variable 'one_byte' can be reduced. [variableScope]
+ uint8_t one_byte;
+         ^
+ecdsa.c:377:80: style:inconclusive: Function 'ecdsaSign' argument 4 names different: declaration 'privatekey' definition 'private_key'. [funcArgNamesDifferent]
+void ecdsaSign(BigNum256 r, BigNum256 s, const BigNum256 hash, const BigNum256 private_key)
+                                                                               ^
+ecdsa.h:40:87: note: Function 'ecdsaSign' argument 4 names different: declaration 'privatekey' definition 'private_key'.
+extern void ecdsaSign(BigNum256 r, BigNum256 s, const BigNum256 hash, const BigNum256 privatekey);
+                                                                                      ^
+ecdsa.c:377:80: note: Function 'ecdsaSign' argument 4 names different: declaration 'privatekey' definition 'private_key'.
+void ecdsaSign(BigNum256 r, BigNum256 s, const BigNum256 hash, const BigNum256 private_key)
+                                                                               ^
+ecdsa.c:937:3: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+  fscanf(f, "%02x", &value);
+  ^
+ecdsa.c:874:15: style: The scope of the variable 'byte_num' can be reduced. [variableScope]
+ unsigned int byte_num;
+              ^
+ecdsa.c:875:15: style: The scope of the variable 'bit_num' can be reduced. [variableScope]
+ unsigned int bit_num;
+              ^
+ecdsa.c:1012:10: style: The scope of the variable 'serialised_size' can be reduced. [variableScope]
+ uint8_t serialised_size;
+         ^
+fft.c:236:11: style: The scope of the variable 'jump' can be reduced. [variableScope]
+ uint32_t jump;
+          ^
+fft.c:238:11: style: The scope of the variable 'tf_index' can be reduced. [variableScope]
+ uint32_t tf_index; // twiddle factor index
+          ^
+fft.c:336:10: style: The scope of the variable 'real_sum' can be reduced. [variableScope]
+ fix16_t real_sum;
+         ^
+fft.c:337:10: style: The scope of the variable 'imag_diff' can be reduced. [variableScope]
+ fix16_t imag_diff;
+         ^
+fix16.c:346:8: style: Condition 'x==0' is always false [knownConditionTrueFalse]
+ if (x == 0) return (result << 16);
+       ^
+fix16.c:340:11: note: Assuming that condition 'x<fix16_one' is not redundant
+ while (x < fix16_one)
+          ^
+fix16.c:346:8: note: Condition 'x==0' is always false
+ if (x == 0) return (result << 16);
+       ^
+fix16.c:165:17: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+ if (product_hi >> 31 != product_hi >> 15)
+                ^
+fix16.c:120:17: portability: Shifting a negative value is technically undefined behaviour [shiftNegativeLHS]
+ return product >> 16;
+                ^
+gen_twiddle/gen_twiddle.c:36:15: style: The scope of the variable 'out' can be reduced. [variableScope]
+ unsigned int out; // C spec guarantees unsigned int can hold [0, 65535]
+              ^
+hmac_drbg.c:236:15: style: The scope of the variable 'copy_size' can be reduced. [variableScope]
+ unsigned int copy_size;
+              ^
+hmac_drbg.c:283:3: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+  fscanf(f, "%02x", &value);
+  ^
+hmac_drbg.c:318:15: style: The scope of the variable 'message_length' can be reduced. [variableScope]
+ unsigned int message_length;
+              ^
+hmac_drbg.c:320:15: style: The scope of the variable 'compare_length' can be reduced. [variableScope]
+ unsigned int compare_length;
+              ^
+hmac_sha512.c:168:11: style: The scope of the variable 't1' can be reduced. [variableScope]
+ uint64_t t1, t2;
+          ^
+hmac_sha512.c:168:15: style: The scope of the variable 't2' can be reduced. [variableScope]
+ uint64_t t1, t2;
+              ^
+hmac_sha512.c:434:4: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+   fscanf(f, "%02x", &value);
+   ^
+hmac_sha512.c:448:4: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+   fscanf(f, "%02x", &value);
+   ^
+hmac_sha512.c:462:4: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+   fscanf(f, "%02x", &value);
+   ^
+hmac_sha512.c:376:15: style: The scope of the variable 'message_length' can be reduced. [variableScope]
+ unsigned int message_length;
+              ^
+hmac_sha512.c:378:15: style: The scope of the variable 'compare_length' can be reduced. [variableScope]
+ unsigned int compare_length;
+              ^
+hmac_sha512.c:381:11: style: The scope of the variable 'key' can be reduced. [variableScope]
+ uint8_t *key;
+          ^
+hmac_sha512.c:382:11: style: The scope of the variable 'message' can be reduced. [variableScope]
+ uint8_t *message;
+          ^
+hmac_sha512.c:383:11: style: The scope of the variable 'expected_result' can be reduced. [variableScope]
+ uint8_t *expected_result;
+          ^
+lpc11uxx/bdf_converter/bdf_converter.c:139:5: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+    fscanf(bdf, "%02x", &(current_bitmap[i]));
+    ^
+lpc11uxx/bdf_converter/bdf_converter.c:78:7: warning: sscanf() without field width limits can crash with huge input data. [invalidscanf]
+  if (sscanf(current_line, "STARTCHAR %s", char_name) == 1)
+      ^
+lpc11uxx/bdf_converter/bdf_converter.c:212:7: warning: sscanf() without field width limits can crash with huge input data. [invalidscanf]
+  if (sscanf(current_line, "FONT %s", font_name) == 1)
+      ^
+lpc11uxx/eeprom.c:46:45: warning: Function 'nonVolatileWrite' argument order different: declaration 'data, partition, address' definition 'data, address, length' [funcArgOrderDifferent]
+NonVolatileReturn nonVolatileWrite(uint8_t *data, uint32_t address, uint32_t length)
+                                            ^
+hwinterface.h:247:52: note: Function 'nonVolatileWrite' argument order different: declaration 'data, partition, address' definition 'data, address, length'
+extern NonVolatileReturn nonVolatileWrite(uint8_t *data, NVPartitions partition, uint32_t address, uint32_t length);
+                                                   ^
+lpc11uxx/eeprom.c:46:45: note: Function 'nonVolatileWrite' argument order different: declaration 'data, partition, address' definition 'data, address, length'
+NonVolatileReturn nonVolatileWrite(uint8_t *data, uint32_t address, uint32_t length)
+                                            ^
+lpc11uxx/eeprom.c:78:44: warning: Function 'nonVolatileRead' argument order different: declaration 'data, partition, address' definition 'data, address, length' [funcArgOrderDifferent]
+NonVolatileReturn nonVolatileRead(uint8_t *data, uint32_t address, uint32_t length)
+                                           ^
+hwinterface.h:256:51: note: Function 'nonVolatileRead' argument order different: declaration 'data, partition, address' definition 'data, address, length'
+extern NonVolatileReturn nonVolatileRead(uint8_t *data, NVPartitions partition, uint32_t address, uint32_t length);
+                                                  ^
+lpc11uxx/eeprom.c:78:44: note: Function 'nonVolatileRead' argument order different: declaration 'data, partition, address' definition 'data, address, length'
+NonVolatileReturn nonVolatileRead(uint8_t *data, uint32_t address, uint32_t length)
+                                           ^
+lpc11uxx/fft_tester/fft_tester.c:379:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+   printf("%d.real mismatch: target = %g, value = %g ", i, target[i].real, value[i].real);
+   ^
+lpc11uxx/fft_tester/fft_tester.c:384:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+   printf("%d.imag mismatch: target = %g, value = %g ", i, target[i].imag, value[i].imag);
+   ^
+lpc11uxx/fft_tester/fft_tester.c:120:10: style: The scope of the variable 'ack_buffer' can be reduced. [variableScope]
+ uint8_t ack_buffer[5];
+         ^
+lpc11uxx/fft_tester/fft_tester.c:138:10: style: The scope of the variable 'ack_buffer' can be reduced. [variableScope]
+ uint8_t ack_buffer[5];
+         ^
+lpc11uxx/fft_tester/fft_tester.c:213:10: style: The scope of the variable 'buffer' can be reduced. [variableScope]
+ uint8_t buffer[4];
+         ^
+lpc11uxx/fft_tester/fft_tester.c:214:6: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int j;
+     ^
+lpc11uxx/fft_tester/fft_tester.c:379:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+   printf("%d.real mismatch: target = %g, value = %g ", i, target[i].real, value[i].real);
+   ^
+lpc11uxx/fft_tester/fft_tester.c:384:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+   printf("%d.imag mismatch: target = %g, value = %g ", i, target[i].imag, value[i].imag);
+   ^
+lpc11uxx/fft_tester/fft_tester.c:540:4: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+   printf("cycles = %u ", readU32LittleEndian(cycles_buffer));
+   ^
+lpc11uxx/hwrng.c:152:10: style: The scope of the variable 'sample' can be reduced. [variableScope]
+ fix16_t sample;
+         ^
+lpc11uxx/hwrng.c:690:10: style: The scope of the variable 'buffer' can be reduced. [variableScope]
+ uint8_t buffer[4];
+         ^
+lpc11uxx/hwrng.c:691:10: style: The scope of the variable 'random_bytes' can be reduced. [variableScope]
+ uint8_t random_bytes[32];
+         ^
+lpc11uxx/hwrng.c:692:11: style: The scope of the variable 'cycles' can be reduced. [variableScope]
+ uint32_t cycles;
+          ^
+lpc11uxx/hwrng.c:694:11: style: The scope of the variable 'sample' can be reduced. [variableScope]
+ uint32_t sample;
+          ^
+lpc11uxx/hwrng.c:695:10: style: The scope of the variable 'mean' can be reduced. [variableScope]
+ fix16_t mean;
+         ^
+lpc11uxx/hwrng.c:696:10: style: The scope of the variable 'variance' can be reduced. [variableScope]
+ fix16_t variance;
+         ^
+lpc11uxx/hwrng.c:697:10: style: The scope of the variable 'kappa3' can be reduced. [variableScope]
+ fix16_t kappa3; // non-standardised skewness
+         ^
+lpc11uxx/hwrng.c:698:10: style: The scope of the variable 'kappa4' can be reduced. [variableScope]
+ fix16_t kappa4; // non-standardised kurtosis
+         ^
+lpc11uxx/hwrng.c:699:10: style: The scope of the variable 'entropy_estimate' can be reduced. [variableScope]
+ fix16_t entropy_estimate;
+         ^
+lpc11uxx/serial_fifo.c:252:10: style: The scope of the variable 'buffer' can be reduced. [variableScope]
+ uint8_t buffer[4];
+         ^
+lpc11uxx/serial_fifo.c:253:11: style: The scope of the variable 'i' can be reduced. [variableScope]
+ uint32_t i;
+          ^
+lpc11uxx/serial_fifo.c:284:10: style: The scope of the variable 'buffer' can be reduced. [variableScope]
+ uint8_t buffer[4];
+         ^
+lpc11uxx/serial_fifo.c:285:11: style: The scope of the variable 'i' can be reduced. [variableScope]
+ uint32_t i;
+          ^
+lpc11uxx/ssd1306.c:407:11: style: The scope of the variable 'char_y' can be reduced. [variableScope]
+ uint32_t char_y; // 0 = topmost character, 1 = the one below that etc.
+          ^
+lpc11uxx/ssd1306.c:409:11: style: The scope of the variable 'char_y_offset' can be reduced. [variableScope]
+ uint32_t char_y_offset; // y offset within character
+          ^
+lpc11uxx/ssd1306.c:411:10: style: The scope of the variable 'current_character' can be reduced. [variableScope]
+ uint8_t current_character;
+         ^
+lpc11uxx/ssd1306.c:412:10: style: The scope of the variable 'next_character' can be reduced. [variableScope]
+ uint8_t next_character;
+         ^
+lpc11uxx/ssd1306.c:543:11: style: The scope of the variable 'length' can be reduced. [variableScope]
+ uint32_t length;
+          ^
+lpc11uxx/statistics_tester/statistics_tester.c:254:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+   printf("%d mismatch ", i);
+   ^
+lpc11uxx/statistics_tester/statistics_tester.c:96:10: style: The scope of the variable 'ack_buffer' can be reduced. [variableScope]
+ uint8_t ack_buffer[5];
+         ^
+lpc11uxx/statistics_tester/statistics_tester.c:114:10: style: The scope of the variable 'ack_buffer' can be reduced. [variableScope]
+ uint8_t ack_buffer[5];
+         ^
+lpc11uxx/statistics_tester/statistics_tester.c:237:9: style: The scope of the variable 'difference' can be reduced. [variableScope]
+ double difference;
+        ^
+lpc11uxx/statistics_tester/statistics_tester.c:265:6: style: The scope of the variable 'matches' can be reduced. [variableScope]
+ int matches;
+     ^
+lpc11uxx/statistics_tester/statistics_tester.c:268:8: style: The scope of the variable 'newline_position' can be reduced. [variableScope]
+ char *newline_position;
+       ^
+lpc11uxx/statistics_tester/statistics_tester.c:254:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+   printf("%d mismatch ", i);
+   ^
+lpc11uxx/statistics_tester/statistics_tester.c:354:3: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+  printf("cycles = %u ", readU32LittleEndian(cycles_buffer));
+  ^
+lpc11uxx/user_interface.c:134:7: style: The scope of the variable 'accept_pressed' can be reduced. [variableScope]
+ bool accept_pressed;
+      ^
+lpc11uxx/user_interface.c:368:10: style: The scope of the variable 'one_byte' can be reduced. [variableScope]
+ uint8_t one_byte; // current byte of seed
+         ^
+pb.h:60:0: error: No header in #include [preprocessorErrorDirective]
+#include PB_SYSTEM_HEADER
+^
+pb_encode.c:115:12: style: The scope of the variable 'size' can be reduced. [variableScope]
+    size_t size;
+           ^
+pb_encode.c:240:19: style: The scope of the variable 'arg' can be reduced. [variableScope]
+    void * const *arg = &(callback->arg);
+                  ^
+pb_encode.c:374:40: portability: Shifting a negative value is technically undefined behaviour [shiftNegativeLHS]
+        zigzagged = (uint64_t)(~(value << 1));
+                                       ^
+pic32/atsha204.c:160:15: style: The scope of the variable 'one_byte' can be reduced. [variableScope]
+ unsigned int one_byte;
+              ^
+pic32/atsha204.c:254:15: style: The scope of the variable 'bits_received' can be reduced. [variableScope]
+ unsigned int bits_received;
+              ^
+pic32/atsha204.c:256:10: style: The scope of the variable 'current_byte' can be reduced. [variableScope]
+ uint8_t current_byte;
+         ^
+pic32/atsha204.c:257:10: style: The scope of the variable 'current_bit' can be reduced. [variableScope]
+ uint8_t current_bit;
+         ^
+pic32/atsha204.c:327:15: style: The scope of the variable 'one_bit' can be reduced. [variableScope]
+ unsigned int one_bit;
+              ^
+pic32/hwrng.c:171:10: style: The scope of the variable 'sample' can be reduced. [variableScope]
+ fix16_t sample;
+         ^
+pic32/hwrng.c:367:15: style: The scope of the variable 'index' can be reduced. [variableScope]
+ unsigned int index;
+              ^
+pic32/hwrng.c:773:10: style: The scope of the variable 'buffer' can be reduced. [variableScope]
+ uint8_t buffer[4];
+         ^
+pic32/hwrng.c:774:10: style: The scope of the variable 'random_bytes' can be reduced. [variableScope]
+ uint8_t random_bytes[32];
+         ^
+pic32/hwrng.c:775:11: style: The scope of the variable 'start_count' can be reduced. [variableScope]
+ uint32_t start_count;
+          ^
+pic32/hwrng.c:776:11: style: The scope of the variable 'end_count' can be reduced. [variableScope]
+ uint32_t end_count;
+          ^
+pic32/hwrng.c:777:11: style: The scope of the variable 'cycles' can be reduced. [variableScope]
+ uint32_t cycles;
+          ^
+pic32/hwrng.c:779:11: style: The scope of the variable 'sample' can be reduced. [variableScope]
+ uint32_t sample;
+          ^
+pic32/hwrng.c:780:10: style: The scope of the variable 'mean' can be reduced. [variableScope]
+ fix16_t mean;
+         ^
+pic32/hwrng.c:781:10: style: The scope of the variable 'variance' can be reduced. [variableScope]
+ fix16_t variance;
+         ^
+pic32/hwrng.c:782:10: style: The scope of the variable 'kappa3' can be reduced. [variableScope]
+ fix16_t kappa3; // non-standardised skewness
+         ^
+pic32/hwrng.c:783:10: style: The scope of the variable 'kappa4' can be reduced. [variableScope]
+ fix16_t kappa4; // non-standardised kurtosis
+         ^
+pic32/hwrng.c:784:10: style: The scope of the variable 'entropy_estimate' can be reduced. [variableScope]
+ fix16_t entropy_estimate;
+         ^
+pic32/main.c:175:12: style: The scope of the variable 'buffer' can be reduced. [variableScope]
+   uint8_t buffer[16384];
+           ^
+pic32/main.c:176:13: style: The scope of the variable 'address' can be reduced. [variableScope]
+   uint32_t address;
+            ^
+pic32/main.c:177:13: style: The scope of the variable 'length' can be reduced. [variableScope]
+   uint32_t length;
+            ^
+pic32/nvmem_manager.c:119:11: style: The scope of the variable 'address_tag' can be reduced. [variableScope]
+ uint32_t address_tag;
+          ^
+pic32/nvmem_manager.c:168:11: style: The scope of the variable 'address_tag' can be reduced. [variableScope]
+ uint32_t address_tag;
+          ^
+pic32/nvmem_manager.c:227:15: style: The scope of the variable 'i' can be reduced. [variableScope]
+ unsigned int i;
+              ^
+pic32/nvmem_manager.c:228:10: style: The scope of the variable 'read_buffer' can be reduced. [variableScope]
+ uint8_t read_buffer[SECTOR_SIZE];
+         ^
+pic32/pushbuttons.c:101:7: style: The scope of the variable 'accept_pressed' can be reduced. [variableScope]
+ bool accept_pressed;
+      ^
+pic32/ssd1306.c:396:11: style: The scope of the variable 'char_y' can be reduced. [variableScope]
+ uint32_t char_y; // 0 = topmost character, 1 = the one below that etc.
+          ^
+pic32/ssd1306.c:398:11: style: The scope of the variable 'char_y_offset' can be reduced. [variableScope]
+ uint32_t char_y_offset; // y offset within character
+          ^
+pic32/ssd1306.c:400:10: style: The scope of the variable 'current_character' can be reduced. [variableScope]
+ uint8_t current_character;
+         ^
+pic32/ssd1306.c:401:10: style: The scope of the variable 'next_character' can be reduced. [variableScope]
+ uint8_t next_character;
+         ^
+pic32/ssd1306.c:532:11: style: The scope of the variable 'length' can be reduced. [variableScope]
+ uint32_t length;
+          ^
+pic32/sst25x.c:86:11: style: The scope of the variable 'junk' can be reduced. [variableScope]
+ uint32_t junk;
+          ^
+pic32/sst25x.c:177:10: style: The scope of the variable 'dummy' can be reduced. [variableScope]
+ uint8_t dummy;
+         ^
+pic32/sst25x.c:109:8: style: Variable 'junk' is assigned a value that is never used. [unreadVariable]
+  junk = SPI4BUF;
+       ^
+pic32/testers/fft_tester/fft_tester.c:414:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+   printf("%d.real mismatch: target = %g, value = %g ", i, target[i].real, value[i].real);
+   ^
+pic32/testers/fft_tester/fft_tester.c:419:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+   printf("%d.imag mismatch: target = %g, value = %g ", i, target[i].imag, value[i].imag);
+   ^
+pic32/testers/fft_tester/fft_tester.c:124:6: style: The scope of the variable 'r' can be reduced. [variableScope]
+ int r;
+     ^
+pic32/testers/fft_tester/fft_tester.c:125:15: style: The scope of the variable 'data_size' can be reduced. [variableScope]
+ unsigned int data_size;
+              ^
+pic32/testers/fft_tester/fft_tester.c:157:10: style: The scope of the variable 'packet_buffer' can be reduced. [variableScope]
+ uint8_t packet_buffer[64];
+         ^
+pic32/testers/fft_tester/fft_tester.c:246:10: style: The scope of the variable 'buffer' can be reduced. [variableScope]
+ uint8_t buffer[4];
+         ^
+pic32/testers/fft_tester/fft_tester.c:247:6: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int j;
+     ^
+pic32/testers/fft_tester/fft_tester.c:414:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+   printf("%d.real mismatch: target = %g, value = %g ", i, target[i].real, value[i].real);
+   ^
+pic32/testers/fft_tester/fft_tester.c:419:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+   printf("%d.imag mismatch: target = %g, value = %g ", i, target[i].imag, value[i].imag);
+   ^
+pic32/testers/fft_tester/fft_tester.c:552:4: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+   printf("cycles = %u ", readU32LittleEndian(cycles_buffer));
+   ^
+pic32/testers/hwb_tester.c:241:3: error: Common realloc mistake: 'return_buffer' nulled but not freed upon failure [memleakOnRealloc]
+  return_buffer = realloc(return_buffer, received_bytes + data_size);
+  ^
+pic32/testers/hwb_tester.c:186:15: style: The scope of the variable 'data_size' can be reduced. [variableScope]
+ unsigned int data_size;
+              ^
+pic32/testers/hwb_tester.c:214:15: style: The scope of the variable 'data_size' can be reduced. [variableScope]
+ unsigned int data_size;
+              ^
+pic32/testers/hwb_tester.c:269:8: style: The scope of the variable 'newline' can be reduced. [variableScope]
+ char *newline;
+       ^
+pic32/testers/nvm_test.c:118:31: error: Array 'buffer[4]' accessed at index 5, which is out of bounds. [arrayIndexOutOfBounds]
+ writeU32LittleEndian(&(buffer[5]), length);
+                              ^
+pic32/testers/nvm_test.c:130:31: error: Array 'buffer[4]' accessed at index 5, which is out of bounds. [arrayIndexOutOfBounds]
+ writeU32LittleEndian(&(buffer[5]), length);
+                              ^
+pic32/testers/nvm_test.c:44:15: style: The scope of the variable 'data_size' can be reduced. [variableScope]
+ unsigned int data_size;
+              ^
+pic32/testers/nvm_test.c:73:15: style: The scope of the variable 'data_size' can be reduced. [variableScope]
+ unsigned int data_size;
+              ^
+pic32/testers/nvm_test.c:196:6: style: The scope of the variable 'mode' can be reduced. [variableScope]
+ int mode;
+     ^
+pic32/testers/report_tester.c:331:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("Send fail, pass = %d, i = %d, r = %s\n", pass, i, libusb_error_name(r));
+    ^
+pic32/testers/report_tester.c:342:6: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+     printf("Receive fail, pass = %d, i = %d, r = %s\n", pass, i, libusb_error_name(r));
+     ^
+pic32/testers/report_tester.c:353:6: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+     printf("Loopback data mismatch, pass = %d, i = %d\n", pass, i);
+     ^
+pic32/testers/report_tester.c:522:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("Receive fail, receive_from_control = %u, pass = %d, i = %d, r = %s\n", receive_from_control, pass, i, libusb_error_name(r));
+    ^
+pic32/testers/report_tester.c:534:6: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+     printf("Out of order data in receive, pass = %d, i = %d\n", pass, i);
+     ^
+pic32/testers/report_tester.c:136:10: style: The scope of the variable 'report_id' can be reduced. [variableScope]
+ uint8_t report_id;
+         ^
+pic32/testers/report_tester.c:139:6: style: The scope of the variable 'report_length' can be reduced. [variableScope]
+ int report_length;
+     ^
+pic32/testers/statistics_tester/statistics_tester.c:269:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+   printf("%d mismatch target = %g value = %g ", i, target[i], value[i]);
+   ^
+pic32/testers/statistics_tester/statistics_tester.c:81:6: style: The scope of the variable 'r' can be reduced. [variableScope]
+ int r;
+     ^
+pic32/testers/statistics_tester/statistics_tester.c:82:15: style: The scope of the variable 'data_size' can be reduced. [variableScope]
+ unsigned int data_size;
+              ^
+pic32/testers/statistics_tester/statistics_tester.c:114:10: style: The scope of the variable 'packet_buffer' can be reduced. [variableScope]
+ uint8_t packet_buffer[64];
+         ^
+pic32/testers/statistics_tester/statistics_tester.c:252:9: style: The scope of the variable 'difference' can be reduced. [variableScope]
+ double difference;
+        ^
+pic32/testers/statistics_tester/statistics_tester.c:279:6: style: The scope of the variable 'matches' can be reduced. [variableScope]
+ int matches;
+     ^
+pic32/testers/statistics_tester/statistics_tester.c:282:8: style: The scope of the variable 'newline_position' can be reduced. [variableScope]
+ char *newline_position;
+       ^
+pic32/testers/statistics_tester/statistics_tester.c:269:4: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned long'. [invalidPrintfArgType_sint]
+   printf("%d mismatch target = %g value = %g ", i, target[i], value[i]);
+   ^
+pic32/testers/statistics_tester/statistics_tester.c:346:3: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+  printf("cycles = %u ", readU32LittleEndian(cycles_buffer));
+  ^
+pic32/testers/stream_to_stdout.c:85:4: portability: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_uint]
+   printf("Got invalid report ID: %u\n", data_size);
+   ^
+pic32/testers/stream_to_stdout.c:25:6: style: The scope of the variable 'r' can be reduced. [variableScope]
+ int r;
+     ^
+pic32/testers/usb_request_tester.c:482:10: style: Unused variable: buffer [unusedVariable]
+ uint8_t buffer[64];
+         ^
+pic32/usb_hal.c:257:15: style: The scope of the variable 'endpoint' can be reduced. [variableScope]
+ unsigned int endpoint;
+              ^
+pic32/usb_hal.c:258:15: style: The scope of the variable 'direction' can be reduced. [variableScope]
+ unsigned int direction;
+              ^
+pic32/usb_hal.c:259:7: style: The scope of the variable 'is_setup' can be reduced. [variableScope]
+ bool is_setup;
+      ^
+pic32/usb_hal.c:260:7: style: The scope of the variable 'is_extended' can be reduced. [variableScope]
+ bool is_extended;
+      ^
+pic32/usb_hal.c:262:11: style: The scope of the variable 'index' can be reduced. [variableScope]
+ uint32_t index;
+          ^
+pic32/usb_hal.c:263:11: style: The scope of the variable 'length' can be reduced. [variableScope]
+ uint32_t length;
+          ^
+pic32/usb_hal.c:264:11: style: The scope of the variable 'transmitted_bytes' can be reduced. [variableScope]
+ uint32_t transmitted_bytes;
+          ^
+pic32/usb_hal.c:72:16: style: struct member 'Anonymous0::reserved1' is never used. [unusedStructMember]
+  unsigned int reserved1 : 2;
+               ^
+pic32/usb_hal.c:85:16: style: struct member 'Anonymous0::reserved2' is never used. [unusedStructMember]
+  unsigned int reserved2 : 8;
+               ^
+pic32/usb_hal.c:89:16: style: struct member 'Anonymous0::reserved3' is never used. [unusedStructMember]
+  unsigned int reserved3 : 6;
+               ^
+pic32/usb_hal.c:97:16: style: struct member 'Anonymous1::reserved1' is never used. [unusedStructMember]
+  unsigned int reserved1 : 2;
+               ^
+pic32/usb_hal.c:104:16: style: struct member 'Anonymous1::reserved2' is never used. [unusedStructMember]
+  unsigned int reserved2 : 8;
+               ^
+pic32/usb_hal.c:107:16: style: struct member 'Anonymous1::reserved3' is never used. [unusedStructMember]
+  unsigned int reserved3 : 6;
+               ^
+pic32/usb_hid_stream.c:378:11: style: The scope of the variable 'packet_length' can be reduced. [variableScope]
+ uint32_t packet_length;
+          ^
+pic32/usb_standard_requests.c:275:15: style: The scope of the variable 'i' can be reduced. [variableScope]
+ unsigned int i;
+              ^
+pic32/usb_standard_requests.c:480:10: style: The scope of the variable 'bmRequestType' can be reduced. [variableScope]
+ uint8_t bmRequestType;
+         ^
+pic32/usb_standard_requests.c:481:10: style: The scope of the variable 'bRequest' can be reduced. [variableScope]
+ uint8_t bRequest;
+         ^
+pic32/usb_standard_requests.c:482:11: style: The scope of the variable 'wValue' can be reduced. [variableScope]
+ uint16_t wValue;
+          ^
+pic32/usb_standard_requests.c:483:11: style: The scope of the variable 'wIndex' can be reduced. [variableScope]
+ uint16_t wIndex;
+          ^
+pic32/usb_standard_requests.c:484:11: style: The scope of the variable 'wLength' can be reduced. [variableScope]
+ uint16_t wLength;
+          ^
+pic32/user_interface.c:289:10: style: The scope of the variable 'one_byte' can be reduced. [variableScope]
+ uint8_t one_byte; // current byte of seed
+         ^
+prandom.c:301:24: warning: Possible null pointer dereference: pool_state [nullPointer]
+  memcpy(random_bytes, pool_state, ENTROPY_POOL_LENGTH);
+                       ^
+prandom.c:372:33: note: Calling function 'getRandom256Internal', 2nd argument '(void*)0' value is 0
+ return getRandom256Internal(n, NULL, false);
+                                ^
+prandom.c:301:24: note: Null pointer dereference
+  memcpy(random_bytes, pool_state, ENTROPY_POOL_LENGTH);
+                       ^
+prandom.c:337:10: warning: Possible null pointer dereference: pool_state [nullPointer]
+  memcpy(pool_state, random_bytes, ENTROPY_POOL_LENGTH);
+         ^
+prandom.c:372:33: note: Calling function 'getRandom256Internal', 2nd argument '(void*)0' value is 0
+ return getRandom256Internal(n, NULL, false);
+                                ^
+prandom.c:337:10: note: Null pointer dereference
+  memcpy(pool_state, random_bytes, ENTROPY_POOL_LENGTH);
+         ^
+prandom.c:269:23: style: Same value in both branches of ternary operator. [duplicateValueTernary]
+ uint8_t random_bytes[MAX(32, ENTROPY_POOL_LENGTH)];
+                      ^
+prandom.c:200:10: style: The scope of the variable 'i' can be reduced. [variableScope]
+ uint8_t i;
+         ^
+prandom.c:267:6: style: The scope of the variable 'r' can be reduced. [variableScope]
+ int r;
+     ^
+ripemd160.c:140:10: style: The scope of the variable 'fn_selector' can be reduced. [variableScope]
+ uint8_t fn_selector;
+         ^
+ripemd160.c:302:12: style: The scope of the variable 'compare_h' can be reduced. [variableScope]
+ uint32_t *compare_h;
+           ^
+sha256.c:116:11: style: The scope of the variable 't1' can be reduced. [variableScope]
+ uint32_t t1, t2;
+          ^
+sha256.c:116:15: style: The scope of the variable 't2' can be reduced. [variableScope]
+ uint32_t t1, t2;
+              ^
+sha256.c:303:4: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+   fscanf(f, "%02x", &value);
+   ^
+sha256.c:318:4: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+   fscanf(f, "%08x", &value);
+   ^
+sha256.c:254:15: style: The scope of the variable 'bytes_to_read' can be reduced. [variableScope]
+ unsigned int bytes_to_read;
+              ^
+sha256.c:260:11: style: The scope of the variable 'message' can be reduced. [variableScope]
+ uint8_t *message;
+          ^
+sha256.c:115:32: style: Local variable 'h' shadows outer variable [shadowVariable]
+ uint32_t a, b, c, d, e, f, g, h;
+                               ^
+sha256.c:223:17: note: Shadowed declaration
+static uint32_t h[8];
+                ^
+sha256.c:115:32: note: Shadow variable
+ uint32_t a, b, c, d, e, f, g, h;
+                               ^
+statistics.c:89:11: style: The scope of the variable 'shift_amount' can be reduced. [variableScope]
+ uint32_t shift_amount;
+          ^
+statistics.c:123:11: style: The scope of the variable 'shift_amount' can be reduced. [variableScope]
+ uint32_t shift_amount;
+          ^
+statistics.c:283:10: style: The scope of the variable 'term' can be reduced. [variableScope]
+ fix16_t term;
+         ^
+statistics.c:418:10: style: The scope of the variable 'sample' can be reduced. [variableScope]
+ fix16_t sample;
+         ^
+statistics.c:420:11: style: The scope of the variable 'fft_index' can be reduced. [variableScope]
+ uint32_t fft_index;
+          ^
+stream_comm.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 16 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+stream_comm.c:327:11: warning: Either the condition 'ptr_arg_s==NULL' is redundant or there is possible null pointer dereference: ptr_arg_s. [nullPointerRedundantCheck]
+ arg_s = *ptr_arg_s;
+          ^
+stream_comm.c:323:16: note: Assuming that condition 'ptr_arg_s==NULL' is not redundant
+ if (ptr_arg_s == NULL)
+               ^
+stream_comm.c:327:11: note: Null pointer dereference
+ arg_s = *ptr_arg_s;
+          ^
+stream_comm.c:332:27: warning: Either the condition 'arg_s==NULL' is redundant or there is possible null pointer dereference: arg_s. [nullPointerRedundantCheck]
+ length = getStringLength(arg_s->next_set, arg_s->next_spec);
+                          ^
+stream_comm.c:328:12: note: Assuming that condition 'arg_s==NULL' is not redundant
+ if (arg_s == NULL)
+           ^
+stream_comm.c:332:27: note: Null pointer dereference
+ length = getStringLength(arg_s->next_set, arg_s->next_spec);
+                          ^
+stream_comm.c:602:16: style: The scope of the variable 'ah' can be reduced. [variableScope]
+ AddressHandle ah;
+               ^
+stream_comm.c:604:7: style: The scope of the variable 'permission_denied' can be reduced. [variableScope]
+ bool permission_denied;
+      ^
+stream_comm.c:609:10: style: The scope of the variable 'private_key' can be reduced. [variableScope]
+ uint8_t private_key[32];
+         ^
+stream_comm.c:885:7: style: The scope of the variable 'ping_greeting' can be reduced. [variableScope]
+ char ping_greeting[sizeof(message_buffer.ping.greeting)];
+      ^
+stream_comm.c:886:7: style: The scope of the variable 'has_ping_greeting' can be reduced. [variableScope]
+ bool has_ping_greeting;
+      ^
+stream_comm.c:384:52: error: Uninitialized variable: message_buffer [uninitvar]
+  sendPacket(PACKET_TYPE_SUCCESS, Success_fields, &message_buffer);
+                                                   ^
+transaction.c:112:10: style: The scope of the variable 'i' can be reduced. [variableScope]
+ uint8_t i;
+         ^
+transaction.c:113:10: style: The scope of the variable 'one_byte' can be reduced. [variableScope]
+ uint8_t one_byte;
+         ^
+wallet.c:187:28: warning: The address of local variable 'current_wallet' might be accessed at non-zero index. [objectIndex]
+   sha256WriteByte(&hs, ptr[i]);
+                           ^
+wallet.c:177:19: note: Address of variable taken here.
+ ptr = (uint8_t *)&current_wallet;
+                  ^
+wallet.c:187:28: note: The address of local variable 'current_wallet' might be accessed at non-zero index.
+   sha256WriteByte(&hs, ptr[i]);
+                           ^
+wallet.c:545:16: style: Expression is always true because 'else if' condition is opposite to previous condition at line 541. [multiCondition]
+    else if (r != NV_NO_ERROR)
+               ^
+wallet.c:541:11: note: first condition
+    if (r == NV_NO_ERROR)
+          ^
+wallet.c:545:16: note: else if condition is opposite to first condition
+    else if (r != NV_NO_ERROR)
+               ^
+wallet.c:543:8: style: Variable 'r' is assigned a value that is never used. [unreadVariable]
+     r = nonVolatileFlush();
+       ^
+wallet.c:1306:10: warning: Assert statement calls a function which may have desired side effects: 'nonVolatileGetSize'. [assertWithSideEffect]
+  assert(nonVolatileGetSize(&partition_offset, PARTITION_GLOBAL) == NV_NO_ERROR);
+         ^
+wallet.c:1348:10: warning: Assert statement calls a function which may have desired side effects: 'nonVolatileGetSize'. [assertWithSideEffect]
+  assert(nonVolatileGetSize(&partition_offset, PARTITION_GLOBAL) == NV_NO_ERROR);
+         ^
+wallet.c:1389:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+wallet.c:1643:11: style: The scope of the variable 'stupidly_calculated_num_wallets' can be reduced. [variableScope]
+ uint32_t stupidly_calculated_num_wallets;
+          ^
+wallet.c:2792:76: error: Subtracting pointers that point to different objects [comparePointers]
+  version_field_address = (uint8_t *)&(current_wallet.unencrypted.version) - (uint8_t *)&current_wallet;
+                                                                           ^
+wallet.c:59:11: note: Variable declared here.
+ uint32_t version;
+          ^
+wallet.c:2792:38: note: Address of variable taken here.
+  version_field_address = (uint8_t *)&(current_wallet.unencrypted.version) - (uint8_t *)&current_wallet;
+                                     ^
+wallet.c:112:21: note: Variable declared here.
+static WalletRecord current_wallet;
+                    ^
+wallet.c:2792:89: note: Address of variable taken here.
+  version_field_address = (uint8_t *)&(current_wallet.unencrypted.version) - (uint8_t *)&current_wallet;
+                                                                                        ^
+wallet.c:2792:76: note: Subtracting pointers that point to different objects
+  version_field_address = (uint8_t *)&(current_wallet.unencrypted.version) - (uint8_t *)&current_wallet;
+                                                                           ^
+wallet.c:2862:75: error: Subtracting pointers that point to different objects [comparePointers]
+ version_field_address = (uint8_t *)&(current_wallet.unencrypted.version) - (uint8_t *)&current_wallet;
+                                                                          ^
+wallet.c:59:11: note: Variable declared here.
+ uint32_t version;
+          ^
+wallet.c:2862:37: note: Address of variable taken here.
+ version_field_address = (uint8_t *)&(current_wallet.unencrypted.version) - (uint8_t *)&current_wallet;
+                                    ^
+wallet.c:112:21: note: Variable declared here.
+static WalletRecord current_wallet;
+                    ^
+wallet.c:2862:88: note: Address of variable taken here.
+ version_field_address = (uint8_t *)&(current_wallet.unencrypted.version) - (uint8_t *)&current_wallet;
+                                                                                       ^
+wallet.c:2862:75: note: Subtracting pointers that point to different objects
+ version_field_address = (uint8_t *)&(current_wallet.unencrypted.version) - (uint8_t *)&current_wallet;
+                                                                          ^
+xex.c:57:10: style: The scope of the variable 'temp' can be reduced. [variableScope]
+ uint8_t temp;
+         ^
+xex.c:468:5: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+    fscanf(f, "%02x", &value);
+    ^
+xex.c:473:5: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+    fscanf(f, "%02x", &value);
+    ^
+xex.c:506:6: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+     fscanf(f, "%02x", &value);
+     ^
+xex.c:532:7: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+      fscanf(f, "%02x", &value);
+      ^
+xex.c:546:7: warning: %x in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+      fscanf(f, "%02x", &value);
+      ^
+xex.c:377:7: style: The scope of the variable 'seen_count' can be reduced. [variableScope]
+ bool seen_count;
+      ^
+xex.c:439:25: style: Checking if unsigned expression 'data_unit_length' is less than zero. [unsignedLessThanZero]
+  if ((data_unit_length <= 0) || (data_unit_length > 10000000))
+                        ^
+pic32/pic32_system.c:171:0: style: The function '_Timer2Handler' is never used. [unusedFunction]
+
+^
+pic32/pic32_system.c:184:0: style: The function '_Timer4Handler' is never used. [unusedFunction]
+
+^
+pic32/usb_hal.c:255:0: style: The function '_USBHandler' is never used. [unusedFunction]
+
+^
+pic32/atsha204.c:475:0: style: The function 'atsha204Random' is never used. [unusedFunction]
+
+^
+pic32/atsha204.c:461:0: style: The function 'atsha204Sleep' is never used. [unusedFunction]
+
+^
+pic32/atsha204.c:436:0: style: The function 'atsha204Wake' is never used. [unusedFunction]
+
+^
+prandom.c:513:0: style: The function 'corruptEntropyPool' is never used. [unusedFunction]
+
+^
+avr/unimplemented.c:22:0: style: The function 'displayAddress' is never used. [unusedFunction]
+
+^
+lpc11uxx/LPC11xx_handlers.c:77:0: style: The function 'fault_undefined' is never used. [unusedFunction]
+
+^
+xex.c:200:0: style: The function 'getEncryptionKey' is never used. [unusedFunction]
+
+^
+lpc11uxx/LPC11xx_handlers.c:46:0: style: The function 'irq_undefined' is never used. [unusedFunction]
+
+^
+pb_decode.c:727:0: style: The function 'pb_decode_delimited' is never used. [unusedFunction]
+
+^
+pb_encode.c:343:0: style: The function 'pb_encode_delimited' is never used. [unusedFunction]
+
+^
+pb_encode.c:68:0: style: The function 'pb_ostream_from_buffer' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
